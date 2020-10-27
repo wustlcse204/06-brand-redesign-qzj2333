@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <title>CSE204 Assignment 5</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse"> <!--https://www.w3schools.com/bootstrap/bootstrap_navbar.asp-->
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Corpus of Contemoporary American English</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="#">Search</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        <div class="container">
+          <p class="intro_paragraph">
+            The corpus contains more than one billion words of text (25+ million words each year 1990-2019) from eight genres: spoken, fiction, popular magazines, newspapers, academic texts, and (with the update in March 2020): TV and Movies subtitles, blogs, and other web pages.
+            Click on any of the links in the search form below for context-sensitive help, and to see the range of queries that the corpus offers.
+          </p>
+          <div class="search_tabs">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#list">List</a></li>
+              <li><a data-toggle="tab" href="#chart">Chart</a></li>
+              <li><a data-toggle="tab" href="#word">Word</a></li>
+            </ul>
+          
+            <div class="tab-content">
+              <div id="list" class="tab-pane fade in active">
+                  <p class="tab_p">
+                    Find single words like mysterious, all forms of a word like JUMP, words matching patterns like *break*, phrases like more * than or rough NOUN. You can also search by synonyms (e.g. gorgeous), and customized wordlists like clothes. In each case, you see each individual matching string.
+                  </p>
+                  <div class="input-group">
+                    <input class="input_text" type="text" placeholder="" required="required">    
+                    <div class="checkbox_group"> <!--https://www.w3schools.com/howto/howto_css_custom_checkbox.asp-->
+                      <label class="checkbox_container">noun
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox_container">verb
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox_container">adj
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="checkbox_container">adv
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div> 
+                    
+                    <button class="btn-submit" type="submit">Find Matching Strings</button>
+                  </div>
+                </div>
+              <div id="chart" class="tab-pane fade">
+                <p class="tab_p">
+                  If you are interested in a set of words or a grammatical construction, then the LIST option shows the frequency of each matching form (end up being, ended up saying, etc), while the CHART option shows the total frequency in each section. (in COCA, the genres and five year blocks).
+                </p>
+                <div class="input-group">
+                  <input class="input_text" type="text" placeholder="" required="required">    
+                  <div class="checkbox_group"> <!--https://www.w3schools.com/howto/howto_css_custom_checkbox.asp-->
+                    <label class="checkbox_container">noun
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox_container">verb
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox_container">adj
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox_container">adv
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div> 
+                  
+                  <button class="btn-submit" type="submit">See Frequency By Section</button>
+                </div>
+              </div>
+              <div id="word" class="tab-pane fade">
+                <p class="tab_p">
+                  You can find a wealth of information for the top 60,000 words in the corpus. 
+                </p>
+                <div class="input-group">
+                  <input class="input_text" type="text" placeholder="" required="required">    
+                  <div class="checkbox_group"> <!--https://www.w3schools.com/howto/howto_css_custom_checkbox.asp-->
+                    <label class="checkbox_container">noun
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox_container">verb
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox_container">adj
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox_container">adv
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div> 
+                  <button class="btn-submit" type="submit">See Detailed Info for Word</button>
+                </div>
+              </div>
+          </div>
+        </div>
+    </body>
+</html>
